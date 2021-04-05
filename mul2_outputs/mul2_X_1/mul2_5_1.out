@@ -1,0 +1,11 @@
+Searching for programs with 1 operations.
+
+Found a 1-operation program:
+   add   r1,rx,rx
+   Expr: (x + x)
+
+Found a 1-operation program:
+   shl   r1,rx,#1
+   Expr: (x << 1)
+Found 2 solutions.
+Counters = 128, total = 128

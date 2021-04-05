@@ -1,0 +1,138 @@
+Searching for programs with 2 operations.
+
+Found a 2-operation program:
+   neg   r1,rx
+   sub   r2,rx,r1
+   Expr: (x - -(x))
+
+Found a 2-operation program:
+   add   r1,rx,#-2147483648
+   add   r2,r1,r1
+   Expr: ((x + 0x80000000) + (x + 0x80000000))
+
+Found a 2-operation program:
+   add   r1,rx,#-2147483648
+   shl   r2,r1,#1
+   Expr: ((x + 0x80000000) << 1)
+
+Found a 2-operation program:
+   add   r1,rx,rx
+   and   r2,r1,-2
+   Expr: ((x + x) & -2)
+
+Found a 2-operation program:
+   add   r1,rx,rx
+   and   r2,r1,r1
+   Expr: ((x + x) & (x + x))
+
+Found a 2-operation program:
+   add   r1,rx,rx
+   or    r2,r1,r1
+   Expr: ((x + x) | (x + x))
+
+Found a 2-operation program:
+   add   r1,rx,rx
+   bic   r2,r1,1
+   Expr: ((x + x) & ~1)
+
+Found a 2-operation program:
+   sub   r1,rx,#-2147483648
+   add   r2,r1,r1
+   Expr: ((x - 0x80000000) + (x - 0x80000000))
+
+Found a 2-operation program:
+   sub   r1,rx,#-2147483648
+   shl   r2,r1,#1
+   Expr: ((x - 0x80000000) << 1)
+
+Found a 2-operation program:
+   and   r1,rx,rx
+   add   r2,r1,rx
+   Expr: ((x & x) + x)
+
+Found a 2-operation program:
+   and   r1,rx,rx
+   add   r2,r1,r1
+   Expr: ((x & x) + (x & x))
+
+Found a 2-operation program:
+   and   r1,rx,rx
+   shl   r2,r1,#1
+   Expr: ((x & x) << 1)
+
+Found a 2-operation program:
+   or    r1,rx,#-2147483648
+   add   r2,r1,r1
+   Expr: ((x | 0x80000000) + (x | 0x80000000))
+
+Found a 2-operation program:
+   or    r1,rx,#-2147483648
+   shl   r2,r1,#1
+   Expr: ((x | 0x80000000) << 1)
+
+Found a 2-operation program:
+   or    r1,rx,rx
+   add   r2,r1,rx
+   Expr: ((x | x) + x)
+
+Found a 2-operation program:
+   or    r1,rx,rx
+   add   r2,r1,r1
+   Expr: ((x | x) + (x | x))
+
+Found a 2-operation program:
+   or    r1,rx,rx
+   shl   r2,r1,#1
+   Expr: ((x | x) << 1)
+
+Found a 2-operation program:
+   xor   r1,rx,#-2147483648
+   add   r2,r1,r1
+   Expr: ((x ^ 0x80000000) + (x ^ 0x80000000))
+
+Found a 2-operation program:
+   xor   r1,rx,#-2147483648
+   shl   r2,r1,#1
+   Expr: ((x ^ 0x80000000) << 1)
+
+Found a 2-operation program:
+   bic   r1,rx,#-2147483648
+   add   r2,r1,r1
+   Expr: ((x & ~0x80000000) + (x & ~0x80000000))
+
+Found a 2-operation program:
+   bic   r1,rx,#-2147483648
+   shl   r2,r1,#1
+   Expr: ((x & ~0x80000000) << 1)
+
+Found a 2-operation program:
+   shl   r1,rx,#1
+   and   r2,r1,-2
+   Expr: ((x << 1) & -2)
+
+Found a 2-operation program:
+   shl   r1,rx,#1
+   and   r2,r1,r1
+   Expr: ((x << 1) & (x << 1))
+
+Found a 2-operation program:
+   shl   r1,rx,#1
+   or    r2,r1,r1
+   Expr: ((x << 1) | (x << 1))
+
+Found a 2-operation program:
+   shl   r1,rx,#1
+   bic   r2,r1,1
+   Expr: ((x << 1) & ~1)
+
+Found a 2-operation program:
+   shl   r1,rx,#2
+   shrs  r2,r1,#1
+   Expr: ((x << 2) >>s 1)
+
+Found a 2-operation program:
+   shl   r1,rx,#3
+   shrs  r2,r1,#2
+   Expr: ((x << 3) >>s 2)
+Found 27 solutions.
+Counters = 928, 6221, total = 7149
